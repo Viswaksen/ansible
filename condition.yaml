@@ -1,0 +1,19 @@
+- name: Conditions
+  hosts: local
+  connection: local
+  vars:
+    NUMBER=78
+  tasks:
+  - name: Knowing the NUMBER
+    ansible.builtin.debug:
+    
+      msg: "Your number is lower"
+    when: NUMBER <100
+
+  - name: Greater number
+    ansible.builtin.debug:
+      msg: "Your number is greter"
+    
+    when: NUMBER>100
+
+
