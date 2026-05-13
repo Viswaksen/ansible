@@ -1,0 +1,12 @@
+- name: Print Varibales
+  hosts: local
+  connection: local
+  vars:
+    COURSE: Python
+    DURATION: 10HR
+  tasks:
+  - name: Will write sentence
+    ansible.builtin.debug:
+      msg:
+       "Hi Guys Iam learning {{ COURSE }} having duration of {{ DURATION }}"
+

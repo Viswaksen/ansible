@@ -6,6 +6,7 @@
   - name: Please install nginx
     ansible.builtin.package:
       name: nginx
+      
       state: present
   
   - name: Please start ginx
