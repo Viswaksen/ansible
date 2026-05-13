@@ -1,0 +1,22 @@
+- name: Print data
+  hosts: local
+  connection: local
+  vars:
+
+    DURATION: 20HR
+    MASETER: Viswaksen
+    is_active: True
+    Tools:
+      -linux
+      -shell
+      -docker
+      -jenkins
+    Wtools:
+
+      CI: jenkins
+      SCRIPTING: shell, ansible, kuber
+
+  tasks:
+  - name: Print all the data
+    ansible.builtin.debug:
+      msg: " Hi My MASETER is {{ MASETER }}, {{ DURATION }} and then it is {{ is_active }} , {{ Tools }}. {{ Wtools }}"
