@@ -7,7 +7,7 @@
       state: present
   
   - name: Please start ginx
-    ansible.builtin.package:
+    ansible.builtin.service:
       name: nginx
       state: started
       enabled: yes
