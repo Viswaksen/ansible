@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    NUMBER=78
+    NUMBER: 78
   tasks:
   - name: Knowing the NUMBER
     ansible.builtin.debug:
