@@ -6,4 +6,4 @@
   tasks:
   - name: Please write sentence
     ansible.builtin.debug:
-      msg: "Hi {{ COURSE }] with {{ DURATION }} and {{ MASETER }}"
+      msg: "Hi {{ COURSE }} with {{ DURATION }} and {{ MASETER }}"
