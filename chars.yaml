@@ -1,0 +1,9 @@
+- name: Print Varibales
+  hosts: local
+  connection: local
+  vars_files:
+  - course.yaml
+  tasks:
+  - name: Please write sentence
+    ansible.builtin.debug:
+      msg: "Hi {{ COURSE }] with {{ DURATION }} and {{ MASETER }}
