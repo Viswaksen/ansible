@@ -1,0 +1,7 @@
+- name: Varibales
+  hosts: local
+  connection: local
+  tasks:
+  - name: Varibales
+    ansible.builtin.debug:
+    msg: "HI {{ COURSE }} and {{ DURATION }}"
