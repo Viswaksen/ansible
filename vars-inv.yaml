@@ -4,4 +4,4 @@
   tasks:
   - name: Varibales
     ansible.builtin.debug:
-    msg: "HI {{ COURSE }} and {{ DURATION }}"
+      msg: "HI {{ COURSE }} and {{ DURATION }}"
