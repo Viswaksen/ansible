@@ -7,10 +7,10 @@
     MASETER: Viswaksen
     is_active: True
     Tools:
-      -linux
-      -shell
-      -docker
-      -jenkins
+    - linux
+    - jenkins
+    - Kubernetes
+    
     Wtools:
 
       CI: jenkins
