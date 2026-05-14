@@ -8,4 +8,15 @@
     ansible.builtin.debug:
       msg: "Hi {{ person | split(',') }}"
   
+  
+  - name: Converting
+    ansible.builtin.debug:
+    vars:
+
+      Good:
+       course: 'Devops'
+       duration: '5 hours'
+    
+      msg: "{{ Good | dict2items }}"
+  
       
