@@ -1,0 +1,11 @@
+- name: Installing the packages
+  hosts: frontend
+  become: yes
+  tasks:
+  - name: Installing and uninstalling the packages
+    ansible.builtin.package:
+      msg:  "{{ item.name }}"
+    loop:
+    - {name: 'nginx', state: 'present'}
+    - {name: 'mysql', state: 'absent'}
+    
