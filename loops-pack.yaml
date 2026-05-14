@@ -4,7 +4,9 @@
   tasks:
   - name: Installing and uninstalling the packages
     ansible.builtin.package:
-      msg:  "{{ item.name }}"
+      name: "{{ item.name }}"
+      state: "{{ item.state }}"
+      
     loop:
     - {name: 'nginx', state: 'present'}
     - {name: 'mysql', state: 'absent'}
