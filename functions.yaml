@@ -10,12 +10,12 @@
   
   
   - name: Converting
-    ansible.builtin.debug:
+    
     vars:
-
       Good:
        course: 'Devops'
        duration: '5 hours'
+    ansible.builtin.debug:
     
       msg: "{{ Good | dict2items }}"
   
