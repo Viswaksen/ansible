@@ -1,0 +1,9 @@
+- name: Funtions
+  hosts: local
+  connection: local
+  tasks:
+  - name: Learning Functions
+    ansible.builtin.debug:
+      msg: "Hi {{ person | default('Ramesh}}"
+  
+      
